@@ -86,7 +86,6 @@ public class FirstUserService {
         final var secondTransactionName = secondUserService.saveSecondTransactionWithMandatory();
 
         return of(firstTransactionName, secondTransactionName);
-
     }
 
     // @Transactional(propagation = Propagation.REQUIRED)
